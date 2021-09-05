@@ -1,0 +1,27 @@
+<h1>Insert product Form</h1>
+
+
+<input name="code" class="=from-control"[(ngModel)]="model.code">
+<input name="title" class="=from-control"[(ngModel)]="model.title">
+<input name="price" class="=from-control"[(ngModel)]="model.price">
+<input name="quantity" class="=from-control"[(ngModel)]="model.quantity">
+
+<button class="btn btn-info" (click)="addToList()"> Add To List </button>
+
+<hr>
+<table>
+    <tr *ngfor = "let item of List">
+        <td>{{item.code}}</td>
+        <td>{{item.title}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.quantity}}</td>
+        <td>
+            <a [routerLink]= "['/product-view/',item.code]" *ngif="item.quantity>0"> show </a>
+        </td>
+        </tr>
+</table>
+
+<a routerLink= "./product-view/0"> Test 0 </a>
+    
+
+
