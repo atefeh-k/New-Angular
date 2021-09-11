@@ -14,5 +14,5 @@ export class StorageService {
     public load(key:string): string{
         return sessionStorage.getItem(key);
     }
-
+//Test
 }
