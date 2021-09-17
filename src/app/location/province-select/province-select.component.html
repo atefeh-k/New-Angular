@@ -1,0 +1,15 @@
+<p>province-select works!</p>
+
+<ng-select 
+
+[items]="locations"
+bindLabel="Name"
+bindValue="LocationId"
+[(ngModel)]="selectedProvince"
+(change)="selected()"
+sppendTo="body">
+
+</ng-select>
+
+
+

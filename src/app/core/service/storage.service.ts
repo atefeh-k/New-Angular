@@ -11,8 +11,8 @@ export class StorageService {
         sessionStorage.setItem(key,value);
     }
 
-    public load(key:string): string{
+    public load(key: string): string{
         return sessionStorage.getItem(key);
     }
-//Test
+
 }
